@@ -1,16 +1,439 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout>
-	<main style="height: 100vh; background: #13151a; color: white; display: grid; place-items: center; font-family: system-ui;">
-		<div style="text-align: center;">
-			<h1 style="font-size: 4rem; margin: 0;">Talentio RRHH</h1>
-			<p style="font-size: 1.5rem; color: #a1a1aa;">Construyendo el futuro...</p>
-			<button style="background: #60a5fa; border: none; padding: 10px 20px; color: white; border-radius: 5px; margin-top: 20px; cursor: pointer;">
-				Ver más
-			</button>
-		</div>
+<Layout title="Talentio RRHH | Potenciamos Personas, Transformamos Empresas">
+	
+	<main>
+
+<section id="inicio" class="min-h-screen bg-talentio-cream py-24 px-4 flex items-center justify-center">
+			
+			<div class="max-w-7xl mx-auto w-full">
+				
+				<div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 auto-rows-[minmax(180px,auto)]">
+					
+					<div class="md:col-span-8 row-span-2 bg-white rounded-[2.5rem] p-8 md:p-12 flex flex-col justify-center relative overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500 border border-white/50 group">
+						<div class="absolute top-0 right-0 w-64 h-64 bg-talentio-blue/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 group-hover:bg-talentio-blue/10 transition-colors"></div>
+						
+						<div class="relative z-10">
+							<div class="inline-flex items-center gap-2 mb-6 border border-talentio-orange/30 px-3 py-1 rounded-full w-fit bg-white/50 backdrop-blur-sm">
+								<span class="w-2 h-2 rounded-full bg-talentio-orange animate-pulse"></span>
+								<span class="text-xs font-bold text-talentio-orange uppercase tracking-wider">Consultoría RRHH</span>
+							</div>
+							
+							<h1 class="font-sans font-black text-5xl lg:text-7xl text-talentio-blue leading-[0.95] mb-6 tracking-tight">
+								Unimos <br/>
+								<span class="text-transparent bg-clip-text bg-gradient-to-r from-talentio-orange to-talentio-pink">visiones</span>, <br/>
+								potenciamos futuros.
+							</h1>
+							
+							<p class="font-serif text-lg text-gray-500 max-w-lg leading-relaxed">
+								El nexo entre el talento que busca crecer y las empresas que quieren evolucionar. Estrategia humana para resultados reales.
+							</p>
+						</div>
+					</div>
+
+					<div class="md:col-span-4 row-span-2 relative rounded-[2.5rem] overflow-hidden shadow-sm group min-h-[400px]">
+						<img 
+							src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" 
+							alt="Consultora Talentio sonriendo" 
+							class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+							loading="eager"
+						/>
+						<div class="absolute inset-0 bg-gradient-to-t from-talentio-blue/80 to-transparent opacity-60"></div>
+						<div class="absolute bottom-6 left-6 right-6 text-white">
+							<p class="font-bold text-lg">Cultura & Valores</p>
+							<p class="text-sm opacity-80 font-serif">El match perfecto.</p>
+						</div>
+					</div>
+
+					<div class="md:col-span-4 bg-talentio-blue text-white rounded-[2.5rem] p-8 flex flex-col justify-between shadow-sm hover:-translate-y-1 transition-transform">
+						<div class="flex justify-between items-start">
+							<span class="text-3xl">🚀</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" /></svg>
+						</div>
+						<div>
+							<span class="block text-4xl font-black mb-1">+500</span>
+							<span class="text-sm font-bold opacity-70 uppercase tracking-widest">Talentos Potenciados</span>
+						</div>
+					</div>
+
+					<div class="md:col-span-5 bg-talentio-orange rounded-[2.5rem] p-8 flex flex-col justify-center items-center text-center shadow-sm relative overflow-hidden group">
+						<div class="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-500 rounded-[2.5rem]"></div>
+						
+						<div class="relative z-10 w-full">
+							<h3 class="text-white font-bold text-2xl mb-4">¿Cuál es tu rol?</h3>
+							<div class="flex gap-3 justify-center">
+								<a href="#contacto" class="px-5 py-2 bg-white text-talentio-orange rounded-full font-bold text-sm hover:scale-105 transition-transform shadow-lg">
+									Soy Empresa
+								</a>
+								<a href="#contacto" class="px-5 py-2 bg-talentio-blue text-white rounded-full font-bold text-sm hover:scale-105 transition-transform shadow-lg">
+									Soy Candidato
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<a href="#soluciones" class="md:col-span-3 bg-white rounded-[2.5rem] p-6 flex items-center justify-between border-2 border-dashed border-gray-200 hover:border-talentio-blue hover:bg-blue-50 transition-all group cursor-pointer">
+						<span class="font-bold text-gray-500 group-hover:text-talentio-blue">Explorar <br/>Servicios</span>
+						<div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-talentio-blue group-hover:text-white transition-colors">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+						</div>
+					</a>
+
+				</div>
+			</div>
+		</section>
+
+<section id="nosotros" class="py-24 bg-white overflow-hidden relative" aria-labelledby="titulo-nosotros">
+			<div class="max-w-7xl mx-auto px-4 w-full">
+				
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+					
+					<div class="relative min-h-[500px] lg:min-h-[600px] order-2 lg:order-1">
+						
+						<div class="absolute top-0 right-0 w-4/5 h-4/5 rounded-[2rem] overflow-hidden shadow-2xl z-0 rotate-2 group">
+							<img 
+								src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop" 
+								alt="Equipo de consultores de Talentio colaborando en una oficina moderna" 
+								width="800"
+								height="1000"
+								loading="lazy"
+								class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+							/>
+							<div class="absolute inset-0 bg-talentio-blue/20 mix-blend-multiply transition-opacity group-hover:opacity-0"></div>
+						</div>
+
+						<div class="absolute bottom-0 left-0 w-3/5 h-3/5 rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.3)] z-10 -rotate-3 border-8 border-white group hover:scale-105 transition-transform duration-500">
+							<img 
+								src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=600&auto=format&fit=crop" 
+								alt="Primer plano de personas trabajando en equipo" 
+								width="600"
+								height="600"
+								loading="lazy"
+								class="w-full h-full object-cover"
+							/>
+						</div>
+
+						<div class="absolute top-1/2 left-1/4 w-32 h-32 bg-talentio-orange rounded-full blur-2xl opacity-40 -z-10 animate-pulse"></div>
+					</div>
+
+					<div class="flex flex-col justify-center order-1 lg:order-2">
+						
+						<span class="font-sans font-bold text-talentio-orange uppercase tracking-widest text-sm mb-4 block">Nuestra Esencia</span>
+						
+						<h2 id="titulo-nosotros" class="font-sans font-black text-4xl md:text-5xl text-talentio-blue mb-8 leading-tight">
+							Somos el puente hacia el <span class="relative inline-block whitespace-nowrap">
+								<span class="relative z-10">Crecimiento.</span>
+								<span class="absolute bottom-1 left-0 w-full h-3 bg-talentio-orange/30 -z-0 -rotate-1 rounded-full"></span>
+							</span>
+						</h2>
+
+						<p class="font-serif text-lg text-gray-600 leading-relaxed mb-8 border-l-4 border-talentio-blue pl-6 italic">
+							"Nuestro compromiso radica en ser el nexo entre el potencial de las personas y el éxito sostenible de las organizaciones. Nos adaptamos a las necesidades únicas de cada cliente."
+						</p>
+
+						<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+							<div class="flex items-start gap-3 group">
+								<div class="bg-talentio-cream p-3 rounded-xl text-talentio-orange group-hover:bg-talentio-orange group-hover:text-white transition-colors">
+									<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+								</div>
+								<div>
+									<h4 class="font-sans font-bold text-talentio-blue text-lg">Potencial Humano</h4>
+									<p class="text-sm text-gray-500 font-serif leading-relaxed">Desarrollamos talento real y medible.</p>
+								</div>
+							</div>
+							<div class="flex items-start gap-3 group">
+								<div class="bg-talentio-cream p-3 rounded-xl text-talentio-orange group-hover:bg-talentio-orange group-hover:text-white transition-colors">
+									<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+								</div>
+								<div>
+									<h4 class="font-sans font-bold text-talentio-blue text-lg">Visión 360°</h4>
+									<p class="text-sm text-gray-500 font-serif leading-relaxed">Soluciones para empresas e individuos.</p>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<a href="#contacto" class="inline-flex items-center gap-2 text-talentio-blue font-bold border-b-2 border-talentio-orange/50 hover:border-talentio-orange transition-all pb-1 group">
+								Conoce nuestra historia 
+								<span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+<section id="soluciones" class="py-24 bg-white relative overflow-hidden" aria-label="Nuestras Soluciones">
+			
+			<div class="max-w-7xl mx-auto px-6 mb-16 text-center">
+				<span class="font-bold text-talentio-orange uppercase tracking-widest text-sm mb-3 block animate-pulse">
+					Ecosistema de Servicios
+				</span>
+				<h2 class="font-sans font-black text-4xl md:text-5xl lg:text-6xl text-talentio-blue tracking-tight">
+					Diseñamos soluciones <br/>
+					<span class="text-transparent bg-clip-text bg-gradient-to-r from-talentio-orange to-talentio-pink">a tu medida.</span>
+				</h2>
+			</div>
+
+			<div class="max-w-7xl mx-auto px-6">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+
+					<div class="group relative rounded-[2.5rem] overflow-hidden min-h-[600px] shadow-2xl shadow-talentio-blue/20 transition-all duration-500 hover:-translate-y-2">
+						
+						<div class="absolute inset-0 z-0">
+							<img 
+								src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" 
+								alt="" 
+								aria-hidden="true"
+								width="1200"
+								height="800"
+								loading="lazy"
+								class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale mix-blend-luminosity opacity-40"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-b from-talentio-blue via-talentio-blue/95 to-talentio-black/90 mix-blend-multiply"></div>
+						</div>
+
+						<div class="relative z-10 p-10 md:p-14 h-full flex flex-col justify-between">
+							
+							<div class="flex justify-between items-start">
+								<div class="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full">
+									<span class="text-xs font-bold text-white uppercase tracking-wider">Organizaciones</span>
+								</div>
+								<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-talentio-orange transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a2 2 0 00-2-2H7a2 2 0 00-2 2v5m4-20v2m0 6v2m0 6v2" /></svg>
+								</div>
+							</div>
+
+							<div class="mt-8 mb-8">
+								<h3 class="font-sans font-black text-4xl md:text-5xl text-white mb-2 leading-tight">
+									Para <br/>Empresas
+								</h3>
+								<div class="h-1 w-20 bg-talentio-orange rounded-full mb-8"></div>
+
+								<ul class="space-y-5">
+									<li class="flex items-start gap-4">
+										<span class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-talentio-orange flex items-center justify-center text-white text-xs font-bold">1</span>
+										<div>
+											<strong class="block text-white text-lg">Reclutamiento IT & Ejecutivo</strong>
+											<span class="text-white/60 text-sm font-serif">Headhunting de perfiles clave.</span>
+										</div>
+									</li>
+									<li class="flex items-start gap-4">
+										<span class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-talentio-orange flex items-center justify-center text-white text-xs font-bold">2</span>
+										<div>
+											<strong class="block text-white text-lg">Consultoría de Clima</strong>
+											<span class="text-white/60 text-sm font-serif">Diagnóstico y transformación cultural.</span>
+										</div>
+									</li>
+									<li class="flex items-start gap-4">
+										<span class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-talentio-orange flex items-center justify-center text-white text-xs font-bold">3</span>
+										<div>
+											<strong class="block text-white text-lg">Capacitación In-Company</strong>
+											<span class="text-white/60 text-sm font-serif">Upskilling de equipos.</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<a href="#contacto" class="w-full py-4 bg-white text-talentio-blue font-bold rounded-xl text-center hover:bg-talentio-orange hover:text-white transition-colors duration-300 shadow-lg shadow-black/20 focus:outline-none focus:ring-4 focus:ring-white/50">
+								Solicitar Propuesta
+							</a>
+						</div>
+					</div>
+
+					<div class="group relative rounded-[2.5rem] overflow-hidden min-h-[600px] shadow-2xl shadow-talentio-orange/20 transition-all duration-500 hover:-translate-y-2">
+						
+						<div class="absolute inset-0 z-0">
+							<img 
+								src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" 
+								alt="" 
+								aria-hidden="true"
+								width="1200"
+								height="800"
+								loading="lazy"
+								class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale mix-blend-luminosity opacity-40"
+							/>
+							<div class="absolute inset-0 bg-gradient-to-b from-talentio-orange via-talentio-orange/95 to-talentio-pink/90 mix-blend-multiply"></div>
+						</div>
+
+						<div class="relative z-10 p-10 md:p-14 h-full flex flex-col justify-between">
+							
+							<div class="flex justify-between items-start">
+								<div class="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-2 rounded-full">
+									<span class="text-xs font-bold text-white uppercase tracking-wider">Talentos</span>
+								</div>
+								<div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white group-hover:bg-talentio-blue transition-colors duration-300">
+									<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+								</div>
+							</div>
+
+							<div class="mt-8 mb-8">
+								<h3 class="font-sans font-black text-4xl md:text-5xl text-white mb-2 leading-tight">
+									Para <br/>Individuos
+								</h3>
+								<div class="h-1 w-20 bg-talentio-blue rounded-full mb-8"></div>
+
+								<ul class="space-y-5">
+									<li class="flex items-start gap-4">
+										<span class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-talentio-blue flex items-center justify-center text-white text-xs font-bold">1</span>
+										<div>
+											<strong class="block text-white text-lg">Coaching de Carrera</strong>
+											<span class="text-white/80 text-sm font-serif">Define tu próximo paso profesional.</span>
+										</div>
+									</li>
+									<li class="flex items-start gap-4">
+										<span class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-talentio-blue flex items-center justify-center text-white text-xs font-bold">2</span>
+										<div>
+											<strong class="block text-white text-lg">Optimización de Perfil</strong>
+											<span class="text-white/80 text-sm font-serif">CV y LinkedIn de alto impacto.</span>
+										</div>
+									</li>
+									<li class="flex items-start gap-4">
+										<span class="mt-1 flex-shrink-0 w-6 h-6 rounded-full bg-talentio-blue flex items-center justify-center text-white text-xs font-bold">3</span>
+										<div>
+											<strong class="block text-white text-lg">Orientación Laboral</strong>
+											<span class="text-white/80 text-sm font-serif">Descubre tu verdadera pasión.</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+
+							<a href="#contacto" class="w-full py-4 bg-white text-talentio-orange font-bold rounded-xl text-center hover:bg-talentio-blue hover:text-white transition-colors duration-300 shadow-lg shadow-black/20 focus:outline-none focus:ring-4 focus:ring-white/50">
+								Agendar Sesión
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+<section id="contacto" class="py-24 bg-talentio-cream relative overflow-hidden" aria-label="Formulario de contacto">
+			
+			<div class="absolute top-0 left-0 w-96 h-96 bg-talentio-blue/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" aria-hidden="true"></div>
+			<div class="absolute bottom-0 right-0 w-96 h-96 bg-talentio-orange/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" aria-hidden="true"></div>
+
+			<div class="max-w-6xl mx-auto px-4 relative z-10">
+				
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+					
+					<div>
+						<span class="font-bold text-talentio-orange uppercase tracking-widest text-sm mb-4 block">
+							Hablemos
+						</span>
+						
+						<h2 class="font-sans font-black text-5xl md:text-6xl text-talentio-blue mb-8 leading-[0.9] tracking-tighter">
+							¿LISTO PARA <br/>
+							<span class="text-transparent bg-clip-text bg-gradient-to-r from-talentio-orange to-talentio-pink">TRANSFORMAR?</span>
+						</h2>
+						
+						<p class="font-serif text-xl text-gray-600 mb-12 italic">
+							Ya sea que busques talento excepcional o tu próximo gran desafío, todo empieza con un "Hola".
+						</p>
+
+						<div class="space-y-8">
+							<div class="group">
+								<p class="text-sm text-gray-400 font-sans font-bold uppercase tracking-wider mb-1">Escríbenos</p>
+								<a href="mailto:hola@talentio.com" class="font-sans font-black text-3xl md:text-4xl text-talentio-blue group-hover:text-talentio-orange transition-colors border-b-2 border-transparent group-hover:border-talentio-orange inline-block leading-tight focus:outline-none focus:ring-2 focus:ring-talentio-orange/50 rounded-sm">
+									talentiosrrhh@gmail.com
+								</a>
+							</div>
+							
+							<div class="group">
+								<p class="text-sm text-gray-400 font-sans font-bold uppercase tracking-wider mb-1">Llámanos / WhatsApp</p>
+								<a href="tel:+5491112345678" class="font-serif text-2xl text-gray-800 group-hover:text-talentio-blue transition-colors focus:outline-none focus:ring-2 focus:ring-talentio-blue/50 rounded-sm">
+									+54 9 221 506-0961
+								</a>
+							</div>
+
+							<div class="flex gap-4 pt-4">
+								<a href="#" aria-label="Visítanos en LinkedIn" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-talentio-blue hover:text-white hover:border-talentio-blue transition-all hover:scale-110 focus:outline-none focus:ring-4 focus:ring-talentio-blue/30">
+									<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h5v-8.321c0-4.67 6.029-5.052 6.029 0v8.321h5v-9.675c0-7.394-8.086-7.189-11.061-3.486v-3.16z"/></svg>
+								</a>
+								<a href="#" aria-label="Síguenos en Instagram" class="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-600 hover:bg-talentio-orange hover:text-white hover:border-talentio-orange transition-all hover:scale-110 focus:outline-none focus:ring-4 focus:ring-talentio-orange/30">
+									<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.996 9.01c-1.657 0-3 .895-3 1.999v7.921c0 1.105 1.343 2.001 3 2.001s3-.896 3-2.001v-7.92c0-1.104-1.343-1.999-3-1.999zm8 2.399v5.602c0 2.209-1.791 4-4 4h-8c-2.209 0-4-1.791-4-4v-5.602c0-2.208 1.791-4 4-4h.398c.371-1.36 1.905-2.401 3.602-2.401s3.231 1.041 3.602 2.401h.398c2.209 0 4 1.792 4 4z" /></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-white p-8 md:p-12 rounded-[2rem] shadow-xl shadow-talentio-blue/5 border border-white/50 relative">
+						<div class="absolute top-0 right-0 w-20 h-20 bg-talentio-orange/10 rounded-bl-[2rem] rounded-tr-[2rem]" aria-hidden="true"></div>
+
+						<form class="space-y-8" method="POST"> <div class="relative group">
+								<input 
+									type="text" 
+									id="nombre" 
+									name="nombre" 
+									required
+									autocomplete="name"
+									class="peer w-full border-b-2 border-gray-200 bg-transparent py-2.5 font-serif text-gray-900 placeholder-transparent focus:border-talentio-blue focus:outline-none transition-colors" 
+									placeholder="Nombre" 
+								/>
+								<label for="nombre" class="absolute left-0 -top-3.5 font-sans text-xs font-bold text-gray-500 transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-base peer-placeholder-shown:font-normal peer-focus:-top-3.5 peer-focus:text-xs peer-focus:font-bold peer-focus:text-talentio-blue cursor-text">
+									Tu Nombre
+								</label>
+							</div>
+
+							<div class="relative group">
+								<input 
+									type="email" 
+									id="email" 
+									name="email" 
+									required
+									autocomplete="email"
+									class="peer w-full border-b-2 border-gray-200 bg-transparent py-2.5 font-serif text-gray-900 placeholder-transparent focus:border-talentio-blue focus:outline-none transition-colors" 
+									placeholder="Email" 
+								/>
+								<label for="email" class="absolute left-0 -top-3.5 font-sans text-xs font-bold text-gray-500 transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-base peer-placeholder-shown:font-normal peer-focus:-top-3.5 peer-focus:text-xs peer-focus:font-bold peer-focus:text-talentio-blue cursor-text">
+									Tu Email
+								</label>
+							</div>
+
+							<div class="relative group">
+								<select 
+									id="interes" 
+									name="interes" 
+									required
+									class="peer w-full border-b-2 border-gray-200 bg-transparent py-2.5 font-serif text-gray-900 focus:border-talentio-blue focus:outline-none transition-colors cursor-pointer"
+								>
+									<option value="" disabled selected>Selecciona una opción</option>
+									<option value="empresa">Soy Empresa</option>
+									<option value="individuo">Soy Individuo</option>
+									<option value="otro">Otro</option>
+								</select>
+								<label for="interes" class="absolute left-0 -top-3.5 font-sans text-xs font-bold text-gray-500 transition-all peer-focus:text-talentio-blue">
+									Me interesa...
+								</label>
+							</div>
+
+							<div class="relative group">
+								<textarea 
+									id="mensaje" 
+									name="mensaje" 
+									rows="3" 
+									required
+									class="peer w-full border-b-2 border-gray-200 bg-transparent py-2.5 font-serif text-gray-900 placeholder-transparent focus:border-talentio-blue focus:outline-none transition-colors resize-none" 
+									placeholder="Mensaje"
+								></textarea>
+								<label for="mensaje" class="absolute left-0 -top-3.5 font-sans text-xs font-bold text-gray-500 transition-all peer-placeholder-shown:top-2.5 peer-placeholder-shown:text-base peer-placeholder-shown:font-normal peer-focus:-top-3.5 peer-focus:text-xs peer-focus:font-bold peer-focus:text-talentio-blue cursor-text">
+									Cuéntanos brevemente
+								</label>
+							</div>
+
+							<button type="submit" class="w-full bg-talentio-blue text-white font-sans font-bold py-4 rounded-full shadow-lg shadow-talentio-blue/30 hover:bg-talentio-black hover:scale-[1.02] transition-all duration-300 mt-4 flex justify-center items-center gap-2 group focus:outline-none focus:ring-4 focus:ring-talentio-blue/50">
+								Enviar Mensaje
+								<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+							</button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
 	</main>
 </Layout>

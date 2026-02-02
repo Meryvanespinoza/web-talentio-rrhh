@@ -1,0 +1,53 @@
+<nav class="fixed w-full z-50 top-0 start-0 border-b border-gray-200 bg-white/80 backdrop-blur-md transition-all">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    
+    <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="/logo.png" class="h-12 w-auto" alt="Logo Talentio" />
+    </a>
+
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent items-center">
+        
+        <li>
+          <a href="/" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-talentio-orange md:p-0 transition-colors">Inicio</a>
+        </li>
+        
+        <li>
+          <a href="/nosotros" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-talentio-orange md:p-0 transition-colors">Nosotros</a>
+        </li>
+
+        <li class="relative group">
+            <button class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-talentio-orange md:p-0 transition-colors cursor-pointer">
+                Soluciones
+                <svg class="w-2.5 h-2.5 ms-2.5 opacity-50 group-hover:rotate-180 transition-transform" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                </svg>
+            </button>
+            
+            <div class="absolute top-full left-0 z-50 hidden font-normal bg-white divide-y divide-gray-100 rounded-xl shadow-xl w-48 group-hover:block border border-gray-100 mt-2">
+                <ul class="py-2 text-sm text-gray-700">
+                  <li>
+                    <a href="/empresas" class="block px-4 py-3 hover:bg-gray-50 hover:text-talentio-blue transition-colors font-bold">
+                         Para Empresas
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/candidatos" class="block px-4 py-3 hover:bg-gray-50 hover:text-talentio-orange transition-colors font-bold">
+                         Para Talentos
+                    </a>
+                  </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+          <a href="/carrera" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-talentio-orange md:p-0 transition-colors">Carrera</a>
+        </li>
+        
+        <li>
+          <a href="/contacto" class="block py-2 px-4 text-white bg-talentio-orange rounded-full hover:bg-talentio-blue hover:scale-105 transition-all shadow-md font-bold">Contacto</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>

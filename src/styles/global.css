@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colores de Talentio */
+  --color-talentio-orange: #ff6740;
+  --color-talentio-blue: #2d68c4;
+  --color-talentio-yellow: #ffaa0e;
+  --color-talentio-pink: #f28dd2;
+  --color-talentio-cream: #fcf6f5;
+  --color-talentio-black: #1a1a1a;
+
+  /* Tipografías */
+  --font-sans: "Montserrat", sans-serif;
+  --font-serif: "Libre Baskerville", serif;
+}
+
+/* Ajustes básicos */
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,221 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Soluciones para Empresas | Talentio RRHH";
+---
+
+<Layout title={title}>
+
+	<section class="pt-32 pb-24 px-6 bg-talentio-cream/30 relative overflow-hidden">
+		
+		<div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+			<div class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-gradient-to-br from-talentio-blue/20 to-transparent blur-3xl opacity-70"></div>
+			<div class="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-talentio-orange/20 to-transparent blur-3xl opacity-70"></div>
+		</div>
+
+		<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+			
+			<div class="order-2 lg:order-1 text-center lg:text-left">
+				<span class="inline-block py-2 px-4 rounded-full bg-white border border-talentio-blue/10 text-talentio-blue text-xs font-bold uppercase tracking-widest mb-6 shadow-sm">
+					Consultoría Estratégica B2B
+				</span>
+				
+				<h1 class="font-sans font-black text-4xl md:text-5xl lg:text-6xl text-talentio-blue mb-6 leading-[1.1] tracking-tight">
+					De la operación diaria a la <br/>
+					<span class="text-transparent bg-clip-text bg-gradient-to-r from-talentio-orange to-talentio-pink">estrategia de negocio.</span>
+				</h1>
+				
+				<p class="font-serif text-xl text-gray-600 mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
+					¿Tu empresa creció pero los procesos siguen dependiendo de vos? <strong>Profesionalizamos tu estructura</strong> y gestionamos tu talento para que recuperes el control y escales con orden.
+				</p>
+				
+				<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+					<a href="#servicios" class="px-8 py-4 bg-talentio-blue text-white rounded-full font-bold hover:bg-talentio-black transition-all shadow-xl shadow-talentio-blue/20 hover:-translate-y-1">
+						Explorar Soluciones
+					</a>
+					<a href="#contacto" class="px-8 py-4 bg-white border-2 border-talentio-blue/10 text-talentio-blue rounded-full font-bold hover:border-talentio-blue transition-all">
+						Agendar Diagnóstico
+					</a>
+				</div>
+			</div>
+
+			<div class="order-1 lg:order-2 relative">
+				<div class="relative rounded-[3rem] overflow-hidden shadow-2xl shadow-talentio-blue/5 aspect-[4/3] group z-10">
+					<img 
+						src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop" 
+						alt="Equipo estratégico en reunión" 
+						class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+					/>
+					<div class="absolute inset-0 bg-gradient-to-tr from-white/20 to-transparent"></div>
+				</div>
+				
+				<div class="absolute -top-6 -left-6 bg-white p-4 rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-gray-100 animate-float-slow z-20 flex items-center gap-3">
+					<div class="w-10 h-10 bg-talentio-orange/10 rounded-full flex items-center justify-center text-talentio-orange">
+						📈
+					</div>
+					<div>
+						<p class="font-bold text-talentio-blue text-sm">Eficiencia</p>
+						<p class="text-xs font-bold text-green-500">+30% Productividad</p>
+					</div>
+				</div>
+				
+				<div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-gray-100 animate-float-delayed z-20 flex items-center gap-3">
+					<div class="w-10 h-10 bg-talentio-blue/10 rounded-full flex items-center justify-center text-talentio-blue">
+						🏗️
+					</div>
+					<div>
+						<p class="font-bold text-talentio-blue text-sm">Estructura Clara</p>
+						<p class="text-xs text-gray-500">Procesos definidos</p>
+					</div>
+				</div>
+				
+				<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-talentio-cream rounded-[3.5rem] -z-10 rotate-3 opacity-50"></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="servicios" class="py-24 px-6 bg-white">
+		<div class="max-w-7xl mx-auto">
+			
+			<div class="text-center mb-16">
+				<h2 class="font-sans font-black text-3xl md:text-5xl text-talentio-blue mb-4">Nuestro Ecosistema B2B</h2>
+				<p class="text-gray-500 max-w-2xl mx-auto font-serif text-lg">6 pilares diseñados para cubrir la estrategia y la operatividad de tu organización.</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+				
+				<div class="bg-talentio-blue rounded-[2.5rem] p-8 flex flex-col h-full shadow-xl shadow-talentio-blue/20 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group">
+					<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3"></div>
+					
+					<div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center text-3xl mb-6 text-white backdrop-blur-sm relative z-10 shadow-inner">
+						🏗️
+					</div>
+					<h3 class="font-black text-2xl text-white mb-4 relative z-10">Profesionalización <br/> de Empresas</h3>
+					<p class="text-white/90 text-sm leading-relaxed mb-6 flex-grow relative z-10 font-serif">
+						Transformamos Pymes en empresas estructuradas. Creamos organigramas, definimos roles y establecemos procesos para que el negocio funcione sin depender del dueño.
+					</p>
+					<div class="relative z-10 border-t border-white/20 pt-4 mt-auto">
+						<span class="text-xs font-bold text-talentio-orange uppercase tracking-wider flex items-center gap-2">
+							<span class="w-2 h-2 bg-talentio-orange rounded-full animate-pulse"></span>
+							Servicio Core
+						</span>
+					</div>
+				</div>
+
+				<div class="bg-white rounded-[2.5rem] p-8 flex flex-col h-full border-2 border-talentio-orange/30 hover:border-talentio-orange hover:shadow-xl hover:shadow-talentio-orange/10 transition-all hover:-translate-y-2 duration-300 group relative overflow-hidden">
+					<div class="absolute top-0 right-0 w-32 h-32 bg-talentio-orange/5 rounded-full blur-2xl"></div>
+					<div class="flex justify-between items-start mb-6 relative z-10">
+						<div class="w-14 h-14 bg-talentio-orange/10 rounded-2xl flex items-center justify-center text-3xl text-talentio-orange shadow-sm">
+							🤖
+						</div>
+						<span class="px-3 py-1 bg-talentio-orange text-white text-[10px] font-bold uppercase rounded-full tracking-wider">Nuevo</span>
+					</div>
+					<h3 class="font-bold text-2xl text-talentio-blue mb-4 relative z-10">Asistente Virtual <br/> RRHH</h3>
+					<p class="text-gray-600 text-sm leading-relaxed mb-6 flex-grow font-serif relative z-10">
+						Innovación y eficiencia. Delegá la operatividad diaria (carga de datos, respuestas frecuentes, seguimiento) a nuestro sistema de asistencia remota.
+					</p>
+					<div class="border-t border-gray-100 pt-4 mt-auto relative z-10">
+						<span class="text-xs font-bold text-talentio-blue uppercase tracking-wider">Soporte Ágil y Moderno</span>
+					</div>
+				</div>
+
+				<div class="bg-white rounded-[2.5rem] p-8 flex flex-col h-full border border-gray-200 hover:border-talentio-blue/30 shadow-sm hover:shadow-xl transition-all hover:-translate-y-2 duration-300 group">
+					<div class="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center text-3xl mb-6 text-talentio-blue group-hover:bg-talentio-blue group-hover:text-white transition-colors shadow-sm">
+						📂
+					</div>
+					<h3 class="font-bold text-xl text-talentio-blue mb-4">Administración <br/> de Personal</h3>
+					<p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow font-serif">
+						Tu departamento de RRHH externo. Nos ocupamos de la gestión dura: legajos, novedades para liquidación y cumplimiento legal.
+					</p>
+					<ul class="space-y-2 text-xs font-bold text-gray-400 mt-auto">
+						<li class="flex items-center gap-2"><span class="text-talentio-blue">✓</span> Gestión de Legajos</li>
+						<li class="flex items-center gap-2"><span class="text-talentio-blue">✓</span> Novedades Mensuales</li>
+					</ul>
+				</div>
+
+				<div class="bg-white rounded-[2.5rem] p-8 flex flex-col h-full border border-gray-200 hover:border-talentio-blue/30 shadow-sm hover:shadow-xl transition-all hover:-translate-y-2 duration-300 group">
+					<div class="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center text-3xl mb-6 text-talentio-blue group-hover:bg-talentio-blue group-hover:text-white transition-colors shadow-sm">
+						📊
+					</div>
+					<h3 class="font-bold text-xl text-talentio-blue mb-4">Consultoría & <br/> Clima</h3>
+					<p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow font-serif">
+						Trabajamos sobre la cultura. Realizamos diagnósticos de clima, evaluaciones de desempeño y planes de carrera.
+					</p>
+					<ul class="space-y-2 text-xs font-bold text-gray-400 mt-auto">
+						<li class="flex items-center gap-2"><span class="text-talentio-blue">✓</span> Encuestas de Clima</li>
+						<li class="flex items-center gap-2"><span class="text-talentio-blue">✓</span> Planes de Carrera</li>
+					</ul>
+				</div>
+
+				<div class="bg-white rounded-[2.5rem] p-8 flex flex-col h-full border border-gray-200 hover:border-talentio-blue/30 shadow-sm hover:shadow-xl transition-all hover:-translate-y-2 duration-300 group">
+					<div class="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center text-3xl mb-6 text-talentio-blue group-hover:bg-talentio-blue group-hover:text-white transition-colors shadow-sm">
+						🎯
+					</div>
+					<h3 class="font-bold text-xl text-talentio-blue mb-4">Reclutamiento y <br/> Selección</h3>
+					<p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow font-serif">
+						Búsquedas efectivas centradas en el "fit cultural". Encontramos perfiles administrativos, comerciales y mandos medios.
+					</p>
+					<ul class="space-y-2 text-xs font-bold text-gray-400 mt-auto">
+						<li class="flex items-center gap-2"><span class="text-talentio-blue">✓</span> Garantía de Reposición</li>
+						<li class="flex items-center gap-2"><span class="text-talentio-blue">✓</span> Psicotécnicos</li>
+					</ul>
+				</div>
+
+				<div class="bg-white rounded-[2.5rem] p-8 flex flex-col h-full border border-gray-200 hover:border-talentio-blue/30 shadow-sm hover:shadow-xl transition-all hover:-translate-y-2 duration-300 group">
+					<div class="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center text-3xl mb-6 text-talentio-blue group-hover:bg-talentio-blue group-hover:text-white transition-colors shadow-sm">
+						💻
+					</div>
+					<h3 class="font-bold text-xl text-talentio-blue mb-4">IT <br/> Recruitment</h3>
+					<p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow font-serif">
+						Headhunting especializado. Hablamos el idioma de la tecnología para encontrar perfiles digitales complejos.
+					</p>
+					<ul class="space-y-2 text-xs font-bold text-gray-400 mt-auto">
+						<li class="flex items-center gap-2"><span class="text-talentio-blue">✓</span> Perfiles Tech & Data</li>
+						<li class="flex items-center gap-2"><span class="text-talentio-blue">✓</span> Alcance Regional</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="contacto" class="py-24 px-6 bg-talentio-cream/30 text-center">
+		<div class="max-w-3xl mx-auto">
+			<h2 class="font-sans font-black text-4xl text-talentio-blue mb-6">Hablemos de tu próximo paso.</h2>
+			<p class="text-gray-500 mb-10 text-lg font-serif">Completa el formulario y un especialista te contactará para realizar un diagnóstico inicial.</p>
+			
+			<form class="bg-white shadow-xl shadow-gray-200/50 p-8 md:p-12 rounded-[2.5rem] border border-white text-left space-y-6">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<div>
+						<label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Empresa</label>
+						<input type="text" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-talentio-blue/20 transition-all" placeholder="Nombre de tu empresa">
+					</div>
+					<div>
+						<label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Contacto</label>
+						<input type="text" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-talentio-blue/20 transition-all" placeholder="Tu nombre">
+					</div>
+				</div>
+				<div>
+					<label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Email Corporativo</label>
+					<input type="email" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-talentio-blue/20 transition-all" placeholder="juan@empresa.com">
+				</div>
+				<div>
+					<label class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Servicio de interés principal</label>
+					<select class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-talentio-blue/20 transition-all text-gray-600 cursor-pointer">
+						<option>Profesionalización de Empresas</option>
+						<option>Asistente Virtual RRHH</option>
+						<option>Administración de Personal</option>
+						<option>Consultoría y Clima</option>
+						<option>Búsqueda y Selección</option>
+						<option>IT Recruitment</option>
+					</select>
+				</div>
+				
+				<button type="submit" class="w-full bg-talentio-blue text-white font-bold py-4 rounded-xl hover:bg-talentio-black hover:scale-[1.02] transition-all shadow-lg shadow-talentio-blue/20 mt-4 text-lg">
+					Solicitar Diagnóstico Gratuito
+				</button>
+			</form>
+		</div>
+	</section>
+
+</Layout>

@@ -1,0 +1,237 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const title = "Únete al Equipo | Carrera en Talentio";
+---
+
+<Layout title={title}>
+
+	<section class="pt-32 pb-20 px-6 bg-white relative overflow-hidden">
+		
+		<div class="absolute top-0 right-0 w-2/3 h-full bg-talentio-cream/50 rounded-bl-[10rem] -z-10"></div>
+		
+		<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+			
+			<div class="order-2 lg:order-1">
+				<div class="inline-flex items-center gap-2 mb-6 border border-talentio-blue/10 px-4 py-1.5 rounded-full bg-white shadow-sm">
+					<span class="w-2 h-2 rounded-full bg-talentio-orange animate-pulse"></span>
+					<span class="text-xs font-bold text-talentio-blue uppercase tracking-wider">Hiring A-Players</span>
+				</div>
+
+				<h1 class="font-sans font-black text-5xl md:text-6xl lg:text-7xl text-talentio-blue mb-8 leading-[1.1] tracking-tight">
+					Elevá tu <br/>
+					<span class="text-transparent bg-clip-text bg-gradient-to-r from-talentio-orange to-pink-500">estándar profesional.</span>
+				</h1>
+
+				<p class="font-serif text-xl text-gray-600 mb-10 leading-relaxed max-w-lg">
+					En Talentio no buscamos llenar sillas. Buscamos mentes inquietas que quieran redefinir la industria de RRHH con estrategia, tecnología y calidad humana.
+					<br/><br/>
+					<strong>¿Estás listo para el siguiente nivel?</strong>
+				</p>
+
+				<div class="flex flex-col sm:flex-row gap-4">
+					<a href="#openings" class="px-8 py-4 bg-talentio-blue text-white rounded-full font-bold hover:bg-talentio-black transition-all shadow-xl shadow-talentio-blue/20 hover:-translate-y-1 text-center flex items-center justify-center gap-2">
+						<span>⚡</span> Ver Posiciones
+					</a>
+					<a href="#cultura" class="px-8 py-4 bg-white border-2 border-talentio-blue/10 text-talentio-blue rounded-full font-bold hover:border-talentio-blue transition-all text-center">
+						Nuestra Cultura
+					</a>
+				</div>
+			</div>
+
+			<div class="order-1 lg:order-2 relative">
+				<div class="relative rounded-[3rem] overflow-hidden shadow-2xl shadow-gray-200 aspect-[4/5] md:aspect-square lg:aspect-[4/5] group border-8 border-white">
+					<img 
+						src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" 
+						alt="Equipo de alto rendimiento colaborando" 
+						class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+						width="800"
+						height="1000"
+						loading="eager" 
+					/>
+					<div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-talentio-blue/60 to-transparent mix-blend-multiply"></div>
+					
+					<div class="absolute bottom-8 left-8 text-white z-10">
+						<p class="font-bold text-2xl">Excelencia.</p>
+						<p class="text-sm opacity-90 font-medium">No negociamos la calidad.</p>
+					</div>
+				</div>
+
+				<div class="absolute top-12 -left-8 bg-white p-4 rounded-2xl shadow-xl animate-float-slow hidden md:flex items-center gap-3 z-20">
+					<div class="w-10 h-10 bg-talentio-orange/10 rounded-full flex items-center justify-center text-talentio-orange text-lg">📈</div>
+					<div>
+						<p class="font-bold text-talentio-blue text-xs uppercase tracking-wider">Crecimiento</p>
+						<p class="text-xs text-gray-500">Carrera sin techo</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="cultura" class="py-24 px-6 bg-white">
+		<div class="max-w-6xl mx-auto">
+			
+			<div class="text-center mb-20">
+				<h2 class="font-sans font-black text-4xl text-talentio-blue mb-4">No somos para cualquiera.</h2>
+				<p class="text-gray-500 font-serif text-lg">Y nos enorgullece decirlo. Buscamos un perfil muy específico.</p>
+			</div>
+
+			<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+				
+				<div class="bg-gray-50 p-10 rounded-[2.5rem] border border-gray-100 flex flex-col h-full hover:shadow-lg transition-shadow duration-300">
+					<h3 class="font-black text-2xl text-gray-400 mb-8 flex items-center gap-3">
+						<span class="text-3xl" aria-hidden="true">❌</span> Esto NO es para vos si...
+					</h3>
+					<ul class="space-y-6 text-gray-500 font-medium text-lg flex-grow">
+						<li class="flex items-start gap-4">
+							<span class="mt-1.5 w-2 h-2 rounded-full bg-gray-300 flex-shrink-0 block"></span>
+							<span class="leading-snug">Buscas un trabajo donde "hacer lo mínimo" sea suficiente.</span>
+						</li>
+						<li class="flex items-start gap-4">
+							<span class="mt-1.5 w-2 h-2 rounded-full bg-gray-300 flex-shrink-0 block"></span>
+							<span class="leading-snug">Te incomoda la autonomía y preferís instrucciones paso a paso.</span>
+						</li>
+						<li class="flex items-start gap-4">
+							<span class="mt-1.5 w-2 h-2 rounded-full bg-gray-300 flex-shrink-0 block"></span>
+							<span class="leading-snug">Crees que "ya lo sabes todo" y no te interesa aprender.</span>
+						</li>
+						<li class="flex items-start gap-4">
+							<span class="mt-1.5 w-2 h-2 rounded-full bg-gray-300 flex-shrink-0 block"></span>
+							<span class="leading-snug">Ves a los candidatos como números, no como personas.</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="bg-talentio-blue text-white p-10 rounded-[2.5rem] shadow-2xl shadow-talentio-blue/20 relative overflow-hidden flex flex-col h-full transform md:-translate-y-4 transition-transform hover:translate-y-0 duration-300">
+					<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
+					
+					<div class="relative z-10">
+						<h3 class="font-black text-2xl text-talentio-orange mb-8 flex items-center gap-3">
+							<span class="text-3xl" aria-hidden="true">🚀</span> Esto ES para vos si...
+						</h3>
+						<ul class="space-y-6 text-white/95 font-medium text-lg">
+							<li class="flex items-start gap-4">
+								<span class="mt-2 w-2 h-2 rounded-full bg-talentio-orange animate-pulse flex-shrink-0 block"></span>
+								<span class="leading-snug">Te obsesiona la <strong>excelencia</strong> y el trabajo bien hecho.</span>
+							</li>
+							<li class="flex items-start gap-4">
+								<span class="mt-2 w-2 h-2 rounded-full bg-talentio-orange animate-pulse flex-shrink-0 block"></span>
+								<span class="leading-snug">Tienes <strong>curiosidad intelectual</strong> y buscas mejorar procesos.</span>
+							</li>
+							<li class="flex items-start gap-4">
+								<span class="mt-2 w-2 h-2 rounded-full bg-talentio-orange animate-pulse flex-shrink-0 block"></span>
+								<span class="leading-snug">Eres <strong>empático/a</strong> y valoras las relaciones humanas.</span>
+							</li>
+							<li class="flex items-start gap-4">
+								<span class="mt-2 w-2 h-2 rounded-full bg-talentio-orange animate-pulse flex-shrink-0 block"></span>
+								<span class="leading-snug">Quieres ser parte de un equipo que celebra los logros colectivos.</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="py-24 px-6 bg-talentio-cream/30">
+		<div class="max-w-7xl mx-auto">
+			<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+				
+				<div class="lg:col-span-5">
+					<span class="text-talentio-orange font-bold uppercase tracking-widest text-sm mb-2 block">Nuestra Promesa</span>
+					<h2 class="font-sans font-black text-4xl md:text-5xl text-talentio-blue mb-6">
+						Crecemos si vos crecés.
+					</h2>
+					<p class="text-gray-600 font-serif text-lg leading-relaxed mb-8">
+						Sabemos que el talento se nutre. Por eso, diseñamos un entorno donde tu desarrollo profesional y tu bienestar personal no compiten, se potencian.
+					</p>
+					
+					<div class="border-l-4 border-talentio-orange pl-6 py-2 bg-white/50 rounded-r-xl">
+						<p class="italic text-gray-500 font-medium">"Aquí tu voz cuenta desde el día 1. No hay burocracia que frene una buena idea."</p>
+					</div>
+				</div>
+
+				<div class="lg:col-span-7">
+					<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+						<div class="bg-white p-6 rounded-[2rem] shadow-sm hover:shadow-lg transition-shadow border border-gray-100/50">
+							<div class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center text-xl mb-4 text-talentio-blue" aria-hidden="true">🌎</div>
+							<h3 class="font-bold text-talentio-blue mb-1 text-lg">Híbrido / Remoto</h3>
+							<p class="text-sm text-gray-500">Flexibilidad basada en confianza y objetivos claros.</p>
+						</div>
+						<div class="bg-white p-6 rounded-[2rem] shadow-sm hover:shadow-lg transition-shadow border border-gray-100/50">
+							<div class="w-10 h-10 bg-orange-50 rounded-full flex items-center justify-center text-xl mb-4 text-talentio-orange" aria-hidden="true">📚</div>
+							<h3 class="font-bold text-talentio-blue mb-1 text-lg">Formación Continua</h3>
+							<p class="text-sm text-gray-500">Cursos y herramientas para potenciar tu perfil profesional.</p>
+						</div>
+						<div class="bg-white p-6 rounded-[2rem] shadow-sm hover:shadow-lg transition-shadow border border-gray-100/50">
+							<div class="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center text-xl mb-4 text-green-600" aria-hidden="true">💸</div>
+							<h3 class="font-bold text-talentio-blue mb-1 text-lg">Bonos Performance</h3>
+							<p class="text-sm text-gray-500">Reconocemos el esfuerzo y los resultados excepcionales.</p>
+						</div>
+						<div class="bg-white p-6 rounded-[2rem] shadow-sm hover:shadow-lg transition-shadow border border-gray-100/50">
+							<div class="w-10 h-10 bg-purple-50 rounded-full flex items-center justify-center text-xl mb-4 text-purple-600" aria-hidden="true">🎉</div>
+							<h3 class="font-bold text-talentio-blue mb-1 text-lg">Día Off Cumpleaños</h3>
+							<p class="text-sm text-gray-500">Tu día es sagrado. Celebralo libre y desconectado.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="openings" class="py-24 px-6 bg-white">
+		<div class="max-w-5xl mx-auto">
+			
+			<div class="text-center mb-16">
+				<h2 class="font-sans font-black text-4xl text-talentio-blue mb-4">Posiciones Abiertas</h2>
+				<p class="text-gray-500 font-serif">¿Dónde puedes sumar valor hoy?</p>
+			</div>
+
+			<div class="space-y-4">
+				
+				<article class="group bg-white border border-gray-100 p-6 md:p-8 rounded-[2rem] hover:border-talentio-blue hover:shadow-xl transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+					<div>
+						<div class="flex items-center gap-3 mb-2">
+							<span class="bg-green-100 text-green-700 text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wide">Activa</span>
+							<span class="text-gray-400 text-xs font-bold uppercase">Remoto</span>
+						</div>
+						<h3 class="font-bold text-xl text-talentio-blue group-hover:text-talentio-orange transition-colors">IT Recruiter Senior</h3>
+						<p class="text-sm text-gray-500 mt-1 max-w-lg">Buscamos un especialista con experiencia en perfiles Full Stack y Data.</p>
+					</div>
+					<a href="mailto:rrhh@talentiorrhh.com?subject=Aplicación IT Recruiter" class="px-6 py-3 bg-gray-50 text-talentio-blue font-bold rounded-full group-hover:bg-talentio-blue group-hover:text-white transition-colors whitespace-nowrap" aria-label="Aplicar a IT Recruiter Senior">
+						Aplicar Ahora →
+					</a>
+				</article>
+
+				<article class="group bg-white border border-gray-100 p-6 md:p-8 rounded-[2rem] hover:border-talentio-blue hover:shadow-xl transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+					<div>
+						<div class="flex items-center gap-3 mb-2">
+							<span class="bg-green-100 text-green-700 text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wide">Activa</span>
+							<span class="text-gray-400 text-xs font-bold uppercase">Híbrido (BA)</span>
+						</div>
+						<h3 class="font-bold text-xl text-talentio-blue group-hover:text-talentio-orange transition-colors">Analista Hard RRHH</h3>
+						<p class="text-sm text-gray-500 mt-1 max-w-lg">Gestión de nóminas, legajos y administración de personal corporativo.</p>
+					</div>
+					<a href="mailto:rrhh@talentiorrhh.com?subject=Aplicación Analista Hard" class="px-6 py-3 bg-gray-50 text-talentio-blue font-bold rounded-full group-hover:bg-talentio-blue group-hover:text-white transition-colors whitespace-nowrap" aria-label="Aplicar a Analista Hard RRHH">
+						Aplicar Ahora →
+					</a>
+				</article>
+
+				<div class="bg-talentio-orange/5 border border-talentio-orange/20 p-8 rounded-[2rem] text-center mt-8">
+					<h3 class="font-bold text-xl text-talentio-blue mb-2">¿No ves tu puesto ideal?</h3>
+					<p class="text-gray-600 mb-6 max-w-xl mx-auto">
+						Siempre estamos buscando gente talentosa. Si crees que puedes aportar valor en Comercial, Marketing o Consultoría, queremos conocerte.
+					</p>
+					<a href="mailto:rrhh@talentiorrhh.com?subject=Candidatura Espontánea Staff" class="inline-block px-8 py-4 bg-talentio-blue text-white font-bold rounded-full hover:bg-talentio-black transition-colors shadow-lg shadow-talentio-blue/20">
+						Enviarnos tu CV Espontáneo
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+</Layout>

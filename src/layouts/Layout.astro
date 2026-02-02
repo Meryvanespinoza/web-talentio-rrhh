@@ -1,23 +1,42 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+
+// Recibimos el título de la página, si no existe usamos uno por defecto
+const { title } = Astro.props;
+---
+
 <!doctype html>
-<html lang="en">
+<html lang="es" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
+		<link rel="icon" type="image/png" href="/favicon.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		
+		<meta name="description" content="Talentio RRHH: Consultoría estratégica, reclutamiento IT y desarrollo de talento. Unimos visiones y potenciamos futuros en el mundo corporativo y profesional." />
+		
+		<meta name="keywords" content="RRHH, Recursos Humanos, Consultora, Reclutamiento IT, Headhunting, Coaching, Talentio, Argentina, Selección de Personal" />
+		
+		<meta name="author" content="Talentio RRHH" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+		
+		<title>{title || "Talentio | Consultoría Estratégica"}</title>
 	</head>
-	<body>
-		<slot />
+	
+	<body class="bg-talentio-cream flex flex-col min-h-screen w-full overflow-x-hidden">
+		
+		<Navbar />
+		
+		<main class="flex-grow w-full">
+			<slot />
+		</main>
+
+		<Footer />
+
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
